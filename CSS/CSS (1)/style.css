@@ -1,0 +1,78 @@
+/* h1 {
+            color:crimson;
+            background-color:bisque;                        
+        }
+
+p {
+    color: blue;
+    background-color:antiquewhite;
+}        
+
+button {
+    color: yellow;
+    background-color:black;
+} */
+
+ /* for practice Question */
+
+ /* h2 {
+    color:rgb(210,24,150);                      /*RGB(Red,Green,Blue)--->(255,0,0)*/
+ /* }
+
+ p {
+    background-color:black;
+    /* color: #ffff00;                             /*(red,green,blue)---->(ffffff)   (hex code concept)*/
+ /* }
+
+   button {
+    background-color:blue;
+    color: white;
+   }  */
+
+
+
+
+   /* ----------------------------------------CONCEPT OF TEXT--------------------------------------------------- */
+
+   /* h1 {
+    text-align:center;
+    text-decoration:wavy brown underline;
+    letter-spacing: 4px;
+    font-family: Arial;
+   }
+   
+   p {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+   }
+
+   h3 {
+    text-align:start;
+    text-decoration:red line-through;
+   }
+
+   h2 {
+    text-decoration: overline;
+   }
+
+   a {
+    text-decoration: none;
+   } */
+
+
+
+   /* ---------------------------------------Practice Question------------------------------------------------------------------- */
+
+   h1 {
+    font-family: league spartan;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: teal double underline;
+    text-transform: uppercase;
+
+   }

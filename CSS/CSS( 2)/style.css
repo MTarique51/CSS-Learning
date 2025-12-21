@@ -1,0 +1,111 @@
+* {
+    font-family: 'Courier New';
+}
+h1,h3 {
+    color: #B92B27;
+}
+
+h3 {
+   background-color: antiquewhite !important;
+}
+#login{
+    background-color: white;
+}
+
+#signup{                                       /* id selectr hai ye jo perticuler selection ke liye use  */
+    background-color: #B92B27;
+    color: wheat;
+}
+
+.upvote {
+    background-color:greenyellow;
+    color:teal;
+}
+
+p{
+    color:black;
+}
+
+/* descendant selector */
+.post a {
+    color: purple;
+    background-color:lightgray;
+}
+
+nav ul li {
+    color: orangered;
+}
+nav ul li a {
+    color:darkblue;
+}
+
+p+h3 {
+    text-decoration: underline;
+}
+
+.upvote+button {
+    background-color:aqua;
+}
+
+div > input {
+    background-color:khaki;
+}
+
+ input[type=text] {
+    color:deeppink;
+ }
+ input[type=password] {
+    color:blue;
+ }
+
+ input[type] {
+    background-color:khaki;
+ }
+
+ button:hover {
+    background-color: black;
+    color: white;
+ }
+ h3:hover {
+    text-decoration: overline;
+ }
+
+ button:active {
+    background-color: hotpink;
+    color: black;
+ }
+
+ p:active {
+    font-weight: bold;
+    color: green;
+ }
+
+ input[type=radio]:checked + label {
+    color: red;
+    font-weight: bold;
+ }
+
+ .post:nth-of-type(n) {                                             /* use of pseudo class */ 
+  background-color: blanchedalmond;
+ }
+
+ h1::first-letter {                                                 /* use of pseudo element */ 
+    color: blue;
+ }
+
+ p::first-line {
+    color:teal;
+ }
+
+ p::selection {
+    background-color:  orangered;
+ }
+
+ /* h3 {
+    background-color: green;
+ }                                                               this is cascading rule final result will be last opration
+ h3 {
+    background-color: red;
+ } */
+
+ 
