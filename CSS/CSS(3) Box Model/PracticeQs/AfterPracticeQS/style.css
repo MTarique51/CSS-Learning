@@ -1,0 +1,32 @@
+span {
+    /*background-color: pink;*/
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+}
+
+#DIV {
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* --------------------------------------inline_block ---------------------------------------*/
+
+.UseOfInlineBlock {
+    height: 220px;
+    width: 220px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* #third {
+    display: none;               /* -------------for hiding--------------- 
+} */
+

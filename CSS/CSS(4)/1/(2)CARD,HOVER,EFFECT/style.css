@@ -1,0 +1,38 @@
+.card {
+    width: 260px;
+    height: 260px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    transition: 1s;
+}
+
+.caard {
+    width: 260px;
+    height: 350px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    transition: 1s;
+}
+
+.desc {
+    padding: 0 2px 0 2px;
+}
+
+img {
+    width: 100%;                     /* ------- for taking complete space ---------- */
+    border-radius: 2px 2px 0 0;
+}
+
+.card:hover {
+     box-shadow: 0 8px 16px lightcoral;
+}
+
+.caard:hover {
+     box-shadow: 0 8px 16px greenyellow;
+}
