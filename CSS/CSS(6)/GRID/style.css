@@ -3,14 +3,111 @@
     height: 300px;
     background-color: yellow;
     display: grid;                            /* default -> Columnwise */
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-template-columns: 200px 200px 200px;          /* how many time (auto) same parts devide */
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px;          how many time (auto) same parts devide */
+
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    grid-gap: 10px 10px;
+    justify-items: start;
  }
 
 .item {
-    /* width: 100px;
-    height: 50px; */
+    width: 100px;
+    height: 50px;
     background-color: greenyellow;
     border: 2px solid black;
     text-align: center;
 }
+
+.one {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    
+    /* grid-column: 1/4; */
+    grid-column: 1 / span2 ;
+}
+
+.two {
+    /* grid-row-start:1 ;
+    grid-row-end: 3; */
+
+    /* grid-row: 1/3; */
+    grid-row: 1 / span3;
+}
+
+ /* ................................................................................................. */
+
+ .box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: FontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-direction: alternate; */
+
+    animation: widthAnimate 3s ease-in 0s infinite normal;             /* ^^^^^^^SHORT RULE^^^^^^^^ */
+
+    animation-name: FontAnimation,colorAnimate,widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3,infinite,100;
+    /* animation-direction: normal; */
+    animation-direction: alternate;
+/* 
+    animation: heightAnimate 4s ease-in 0s infinite normal;   */
+    
+ }
+
+ @keyframes FontAnimation {
+    from {
+        font-size:20px;
+        /* background-color: ; */             /* Short Rule Ke liye yahan multiple bana sakte hain */
+    }
+    to {
+        font-size:40px;
+    }
+ }
+
+ @keyframes colorAnimate {
+    from{
+        background-color: lightseagreen;
+    }
+    to {
+        background-color: orange;
+    }
+ }
+
+ @keyframes widthAnimate {
+    from{
+        width: 10px;
+    }
+    to{
+        width: 400px;
+    }
+ }
+/* 
+ @keyframes heightAnimate {
+    0%{
+        height: 20px;
+    }
+    30%{
+        height: 40px;
+    }
+    60%{
+        height: 70px;
+    }
+    100%{
+        height: 100px;
+    }
+ } */
