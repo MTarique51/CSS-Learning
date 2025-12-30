@@ -1,0 +1,19 @@
+.box {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+.one {
+    background-color: aquamarine;
+    position: relative;               /* At static and default positin z-indexing will not apply */
+    z-index: -2;          
+}
+
+.two {
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    z-index: -1;                      /* Always Heighr Number {(-1) > (-2)} will show up */
+}
